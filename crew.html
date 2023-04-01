@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat:wght@300;400;500&family=Roboto&family=Roboto+Condensed:wght@200;300;400;700&display=swap" rel="stylesheet">
+
+    <title>Space tourism website</title>
+</head>
+<body class="crew">
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo"><img src="assets/shared/logo.svg" alt=""></div>
+    
+        <nav class="top-nav | text-uppercase fs-300">
+          <div class="nav-item">
+            <a href="index.html"><b>00</b> Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="destination.html"><b>01</b> Destination</a>
+          </div>
+          <div class="nav-item">
+            <a href="crew.html"><b>02</b> Crew</a>
+          </div>
+          <div class="nav-item">
+            <a href="technology.html"><b>03</b> Technology</a>
+          </div>
+        </nav>
+    
+        <button class="nav-toggle">
+          <img id="icon-hamburger" data-visible="true" src="assets/shared/icon-hamburger.svg" alt="">
+          <img id="icon-close" data-visible="false" src="assets/shared/icon-close.svg" alt="">
+        </button>
+    
+    </header>
+
+    <!-- CREW -->
+    <div class="container">
+        <div class="even-columns">
+            <div>
+                <h2 class="innerpage-title"><span>02</span>Meet your crew</h2>
+
+                <!-- Engineer -->
+                <div class="tab-content" id="details-engineer" data-visible="true">
+                    <h2 class="fs-500 ff-heading text-primary-400 padding-top-600">Flight Engineer</h2>
+                    <h1 class="fs-550 padding-top-100 padding-bottom-200">Anousheh Ansari</h1>
+                    <p>
+                        Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+                        Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+                        fly to the ISS, and the first Iranian in space.
+                    </p>
+                </div>
+
+                <!-- Pilot -->
+                <div class="tab-content" id="details-pilot" data-visible="false">
+                    <h2 class="fs-500 ff-heading text-primary-400 padding-top-600">Pilot</h2>
+                    <h1 class="fs-550 padding-top-100 padding-bottom-200">Victor Glover</h1>
+                    <p>
+                        Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+                        International Space Station. Glover is a commander in the U.S. Navy where 
+                        he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+                        station systems flight engineer. 
+                    </p>                    
+                </div>
+
+                <!-- Specialist -->
+                <div class="tab-content" id="details-specialist" data-visible="false">
+                    <h2 class="fs-500 ff-heading text-primary-400 padding-top-600">Mission Specialist</h2>
+                    <h1 class="fs-550 padding-top-100 padding-bottom-200">Mark Shuttleworth</h1>
+                    <p>
+                        Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+                        the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+                        African to travel to space as a space tourist.
+                    </p>
+                </div>
+
+                <!-- Commander -->
+                <div class="tab-content" id="details-commander" data-visible="false">
+                    <h2 class="fs-500 ff-heading text-primary-400 padding-top-600">Commander</h2>
+                    <h1 class="fs-550 padding-top-100 padding-bottom-200">Douglas Hurley</h1>
+                    <p>
+                        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+                        and former NASA astronaut. He launched into space for the third time as 
+                        commander of Crew Dragon Demo-2.
+                    </p>
+                </div>
+
+                <!-- Buttons for switching between the crew tabs -->
+                <button class="btn-crew btn-tab" id="engineer" data-source="crew/image-anousheh-ansari.png" data-active></button>
+                <button class="btn-crew btn-tab" id="pilot" data-source="crew/image-victor-glover.png"></button>
+                <button class="btn-crew btn-tab" id="specialist" data-source="crew/image-mark-shuttleworth.png"></button>
+                <button class="btn-crew btn-tab" id="commander" data-source="crew/image-douglas-hurley.png"></button>
+                
+            </div>
+            <div>
+                <img id="img-tab" src="assets/crew/image-anousheh-ansari.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
